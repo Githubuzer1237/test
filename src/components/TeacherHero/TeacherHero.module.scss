@@ -1,0 +1,66 @@
+.teacher {
+  margin: 0 auto;
+  padding: 0 15px;
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+
+    @media (max-width: 1000px) {
+      flex-direction: column;
+    }
+  }
+
+  &__languages {
+    width: 230px;
+    height: 1300px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+
+    h2 {
+      font-size: 32px;
+      color: #d99a01;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .language__link {
+      display: block;
+      font-size: 22px;
+      color: #936700;
+      text-align: center;
+      text-decoration: none;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__cards {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat( 2, 1fr);
+    margin-top: 20px;
+    gap: 20px;
+  }
+}
+.language__link {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #007bff;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #320d82;
+  }
+}
+
+.active {
+  background-color: #320d82;
+  color: white;
+  border-color: #320d82;
+}
+

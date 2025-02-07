@@ -1,0 +1,25 @@
+.h1 {
+   font-size: 30px;
+   padding: 60px;
+   border: 1px solid #e6e6e6;
+   border-left:  none ;
+   border-right:  none ;
+
+
+}
+.df {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+}
+.nav {
+   display: flex;
+   gap: 30px;
+   flex-wrap: wrap;
+
+   a {
+      color: white;
+      text-decoration: none;
+   }
+}
